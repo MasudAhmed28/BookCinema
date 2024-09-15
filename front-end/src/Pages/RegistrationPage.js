@@ -63,7 +63,7 @@ const RegistrationPage = () => {
     if (validateInputs()) {
       try {
         const response = await axios.post(
-          "http://localhost:8080/api/otp",
+          "https://bookcinema-backend.onrender.com/api/otp",
           registerData
         );
         if (response.status === 200) {
