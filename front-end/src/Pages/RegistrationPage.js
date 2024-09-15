@@ -85,7 +85,7 @@ const RegistrationPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/register",
+        "https://bookcinema-backend.onrender.com/api/register",
         registerData
       );
 
