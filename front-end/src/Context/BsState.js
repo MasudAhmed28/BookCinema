@@ -21,7 +21,7 @@ const BsState = (props) => {
     console.log(loggedinUser);
     console.log(dateSelected);
     console.log(localStorage.getItem("token"));
-    const response = await fetch(`https://bookcinema-backend.onrender.com/api/booking`, {
+    const response = await fetch(`http://localhost:8080/api/booking`, {
       method: "POST",
       headers: {
         Authorization: localStorage.getItem("token"),
@@ -53,7 +53,7 @@ const BsState = (props) => {
   };
 
   const handleGetLastBooking = async () => {
-    const response = await fetch(`https://bookcinema-backend.onrender.com/api/booking`, {
+    const response = await fetch(`http://localhost:8080/api/booking`, {
       method: "GET",
       headers: {
         Authorization: localStorage.getItem("token"),

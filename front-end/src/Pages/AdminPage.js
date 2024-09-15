@@ -53,7 +53,7 @@ const AdminPanel = () => {
       .then((response) => response.json())
       .then((data) => {
         if (data.success) {
-          setMessage("Shows and seats created successfully!");
+          setMessage("Hey !Shows and seats created successfully!");
         } else {
           setMessage("Error creating shows and seats.");
         }

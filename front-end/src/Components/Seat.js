@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import "../Css/Seat.css";
 import BsContext from "../Context/BsContext";
 
-const socket = io("https://bookcinema-backend.onrender.com");
+const socket = io("http://localhost:8080");
 
 const Seat = () => {
   const {
@@ -27,7 +27,7 @@ const Seat = () => {
     const fetchSeats = async () => {
       try {
         const response = await fetch(
-          `https://bookcinema-backend.onrender.com/api/seats?fmovie=${encodeURIComponent(
+          `http://localhost:8080/api/seats?fmovie=${encodeURIComponent(
             movie
           )}&fslot=${encodeURIComponent(time)}&fdate=${encodeURIComponent(
             dateSelected
