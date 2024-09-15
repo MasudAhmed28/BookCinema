@@ -33,7 +33,7 @@ const MovieList = ({ selectedGenre, searchQuery }) => {
     // Fetch movies from API
     const fetchMovies = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/movieList");
+        const response = await fetch("https://bookcinema-backend.onrender.com/api/movieList");
         const result = await response.json();
 
         if (result.data) {
