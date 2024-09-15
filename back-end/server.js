@@ -19,7 +19,7 @@ const Port = process.env.PORT;
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000", // Replace with your React app URL
+    origin: "https://bookcinema-frontend.onrender.com", // Replace with your React app URL
     methods: ["GET", "POST"],
   },
 });
