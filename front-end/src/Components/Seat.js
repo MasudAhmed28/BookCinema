@@ -3,7 +3,7 @@ import { io } from "socket.io-client";
 import "../Css/Seat.css";
 import BsContext from "../Context/BsContext";
 
-const socket = io("http://localhost:8080");
+const socket = io("https://bookcinema-backend.onrender.com");
 
 const Seat = () => {
   const {
