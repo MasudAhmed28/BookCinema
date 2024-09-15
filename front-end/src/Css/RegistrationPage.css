@@ -1,0 +1,86 @@
+.login-container {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100vw;
+  max-width: 500px;
+  box-sizing: border-box;
+  margin-top: 80px;
+  border: 2px solid rgb(203, 25, 25);
+}
+.logo-container {
+  position: absolute;
+  top: 0;
+  margin-bottom: 50px;
+  font-size: 2px;
+}
+
+h1 {
+  border-bottom: 1px solid #ccc;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-control input {
+  border-radius: 5px;
+  border: 2px solid #ccc;
+  padding: 12px;
+  margin-bottom: 5px;
+}
+
+.form-control .error {
+  color: red;
+  font-size: 13px;
+  height: 13px;
+}
+
+.form-control.success input {
+  border-color: green;
+}
+
+.form-control.error input {
+  border-color: red;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 10px;
+}
+.form-control .error-text {
+  color: red;
+  font-size: 13px;
+  margin: 0; /* Remove margin to avoid gaps */
+}
+
+button:hover {
+  background: darkorange;
+}
+
+p {
+  text-align: center;
+  font-size: 14px;
+}
+
+a {
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}

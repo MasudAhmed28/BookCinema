@@ -1,0 +1,25 @@
+.SM_heading {
+  width: 100%;
+  font-size: 22px;
+  color: black;
+}
+
+.SM_main_container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  color: black;
+}
+@media (max-width: 480px) {
+  .SM_heading {
+    font-size: 18px;
+  }
+
+  .SM_main_container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+}

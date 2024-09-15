@@ -1,0 +1,40 @@
+const generateSeats = async (showId) => {
+  const seats = [];
+  const rows = ["A", "B", "C", "D", "E", "F"]; // Adjust rows as needed
+
+  rows.forEach((row) => {
+    for (let i = 1; i <= 8; i++) {
+      // Adjust number of seats per row as needed
+      const seatNumber = `${row}${i}`;
+      const status = "available"; // Default status
+
+      seats.push({
+        show: showId,
+        seatNumber,
+        status,
+        reservedBy: null,
+        reservedAt: null,
+        bookedBy: null,
+        bookedAt: null,
+      });
+    }
+  });
+
+  return seats;
+};
+
+// Insert seats into the database
+const insertSeats = async () => {
+  try {
+    // Assume you have a specific show ID you're inserting seats for
+    const showId = "66d6259d6398b3ab91e7d228"; // Replace with actual Show ID
+    const seats = await generateSeats(showId);
+
+    await Seat.insertMany(seats);
+    console.log("Seats inserted successfully!");
+  } catch (error) {
+    console.error("Error inserting seats:", error);
+  }
+};
+
+insertSeats();
