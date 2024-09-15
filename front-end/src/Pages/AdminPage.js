@@ -20,7 +20,7 @@ const AdminPanel = () => {
 
     const fetchMovies = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/movieList");
+        const response = await fetch("https://bookcinema-backend.onrender.com/api/movieList");
         const result = await response.json();
 
         if (result.data) {
@@ -43,7 +43,7 @@ const AdminPanel = () => {
       movieId: selectedMovie,
     };
 
-    fetch("http://localhost:8080/api/create-shows", {
+    fetch("https://bookcinema-backend.onrender.com/api/create-shows", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
