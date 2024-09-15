@@ -28,7 +28,7 @@ const LoginPage = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/login",
+        "https://bookcinema-backend.onrender.com/api/login",
         loginData
       );
       console.log(response.data);
